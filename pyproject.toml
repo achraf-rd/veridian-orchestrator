@@ -1,0 +1,18 @@
+[project]
+name = "veridian-orchestrator"
+version = "0.1.0"
+description = "LLM supervisor orchestrator for the Veridian ADAS pipeline — LangGraph graph + NVIDIA NIM (GPT-OSS) brain over the MCP gateway."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "openai>=1.40",
+    "fastmcp>=2.10",
+    "langgraph>=0.2.60",
+    "langgraph-checkpoint-postgres>=2.0",
+    "psycopg[binary,pool]>=3.2",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false
